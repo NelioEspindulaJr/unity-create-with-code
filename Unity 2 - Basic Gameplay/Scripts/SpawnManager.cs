@@ -15,11 +15,6 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
     }
-
-    void Update()
-    {
-
-    }
     
     void SpawnRandomAnimal() {
         Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
